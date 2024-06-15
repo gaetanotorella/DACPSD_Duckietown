@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- <node name="rosbag_record" pkg="rosbag" type="record" required="true" output="screen"
+            args="-O ~/Desktop/bagfile.bag /DUCKS/db1/pose /DUCKS/db2/pose /DUCKS/dcuklorean/pose /DUCKS/duckicha/pose">
+    </node>  -->
+
+    <include file="$(find distribuito)/launch/db1_launch.launch" />
+    <include file="$(find distribuito)/launch/db2_launch.launch" />
+    <include file="$(find distribuito)/launch/ducklorean_launch.launch" />
+    <include file="$(find distribuito)/launch/duckicha_launch.launch" />
+
+</launch>

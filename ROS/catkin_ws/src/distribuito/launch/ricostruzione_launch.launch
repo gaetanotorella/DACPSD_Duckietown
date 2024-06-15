@@ -1,0 +1,17 @@
+<launch>
+
+    <arg name="nome_db" default="none"/>
+    <arg name="x" default="0"/>
+    <arg name="y" default="0"/>
+    <arg name="theta" default="0"/>
+
+    <param name="nome_macchina" value="$(arg nome_db)"/>
+    <param name="x_init" value="$(arg x)"/>
+    <param name="y_init" value="$(arg y)"/>
+    <param name="theta_init" value="$(arg theta)"/>
+
+    <node pkg="distribuito" type="ricostruzione_node" name="ricostruzione_node_$(arg nome_db)" output="screen">
+    </node>
+
+
+</launch>

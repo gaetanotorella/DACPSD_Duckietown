@@ -1,0 +1,12 @@
+<launch>
+
+<!-- controllo per db2 -->
+
+    <node pkg="distribuito" type="controllo_node" name="controllo_node_db2" output="screen">
+        <param name="nome_macchina_main" value="db2"/>
+        <param name="nome_macchina_2" value="ducklorean"/>
+        <param name="nome_macchina_3" value="db1"/>
+        <param name="offset" value="0.9"/>
+    </node>
+
+</launch>

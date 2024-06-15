@@ -1,0 +1,12 @@
+<launch>
+        
+<!-- controllo per duckicha -->
+
+    <node pkg="distribuito" type="controllo_node" name="controllo_node_duckicha" output="screen">
+        <param name="nome_macchina_main" value="duckicha"/>
+        <param name="nome_macchina_2" value="db1"/>
+        <param name="nome_macchina_3" value="ducklorean"/>
+        <param name="offset" value="-0.45"/>
+    </node>
+
+</launch>

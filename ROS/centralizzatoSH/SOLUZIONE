@@ -1,0 +1,92 @@
+# SUL PC CENTRALE CON ROS E MESSAGGO SENZA DTS
+
+# ABILITA IL MULTI CAST SU PC E MACCHINE (DTS E SSH) - da verificare se e' necessario farlo sia su ssh che dts (io pensa serva solo su ssh) 
+
+    cat /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
+
+# ti da 1 ma dovrebbe essere 0 quindi
+
+    sudo sh -c "echo 0 >/proc/sys/net/ipv4/icmp_echo_ignore_broadcasts"
+
+
+# ANCORA DA TESTARE - per renderlo permanente, modifica /etc/sysctl.conf aggiungendo la seguente oppure scommentala se esiste gia', e cambia il suo valore di default
+
+    net.ipv4.icmp_echo_ignore_broadcasts=0
+
+# per assicurarsi che funzioni sempre esegui:
+
+    sudo service procps restart
+
+
+# PROCEDURA PER INSTALLAZIONE PACCHETTO MULTIMASTER DA FARE 
+
+# SU PC
+
+    cd catkin_ws/src
+    git clone https://github.com/fkie/multimaster_fkie.git multimaster
+    rosdep update
+    rosdep install -i --as-root pip:false --reinstall --from-paths multimaster
+    catkin build fkie_multimaster
+
+# su DTS - presumimbilmente da fare ogni volta
+    
+    cd catkin_ws/src
+    git clone https://github.com/fkie/multimaster_fkie.git multimaster
+
+    sudo apt update
+#   sudo apt-get install python3-pip
+    sudo pip install -U rosdep
+    sudo rosdep init
+   
+    rosdep update
+    rosdep install -i --as-root pip:false --reinstall --from-paths multimaster
+    catkin build fkie_multimaster
+
+
+# TESTING
+
+    roscore
+    export ROS_HOSTNAME=%nomepc%.local
+    (es. ubunut.local , ubuntu.local)
+
+# AVVIA ROSCORE SUL PC PRINCIPALE ricordati di mettere ROS_HOSTNAME
+# SU PC 
+
+    export ROS_HOSTNAME=%nomepc%.local
+    rosrun fkie_master_discovery master_discovery _mcast_group:=224.0.0.1
+
+# SU MACCHINE (DTS)
+
+    rosrun fkie_master_discovery master_discovery _mcast_group:=224.0.0.1
+
+    rosrun fkie_master_discovery master_discovery _rpc_port:=11613
+
+
+# SOLO SU PC - su un altro terminale ricordati di mettere ROS_HOSTNAME
+    
+    export ROS_HOSTNAME=%nomepc%.local
+    rosrun fkie_master_sync master_sync
+
+# in teoria dovrebbe trovare le macchine sulla rete
+
+# SUL PC PRINCIPALE - su un altro terminale
+
+    rostopic list
+    rqt_graph
+
+
+
+# PREGHIAMO A DIO CHE VADA TUTTO BENE
+
+# METTI VELOCITA' A 0.2 PER ENTRAMBI
+
+rostopic pub /db1/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "{'header': {'seq': 0, 'stamp': { 'secs': 0, 'nsecs': 0}, 'frame_id': ''}, 'vel_left': 0.2, 'vel_right': 0.2}"
+rostopic pub /db2/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "{'header': {'seq': 0, 'stamp': { 'secs': 0, 'nsecs': 0}, 'frame_id': ''}, 'vel_left': 0.2, 'vel_right': 0.2}"
+
+
+# ARRESTA ENTRAMBI
+
+rostopic pub /db1/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "{'header': {'seq': 0, 'stamp': { 'secs': 0, 'nsecs': 0}, 'frame_id': ''}, 'vel_left': 0.0, 'vel_right': 0.0}"
+rostopic pub /db2/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "{'header': {'seq': 0, 'stamp': { 'secs': 0, 'nsecs': 0}, 'frame_id': ''}, 'vel_left': 0.0, 'vel_right': 0.0}"
+
+

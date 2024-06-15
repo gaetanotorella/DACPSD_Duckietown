@@ -1,0 +1,16 @@
+<launch>
+
+    <arg name="nome_db" default="none" />
+
+    <node pkg="centralizzato" type="ricostruzione_node" name="ricostruzione_node" output="screen">
+        <param name="nome_macchina" value="$(arg nome_db)"/>
+    </node>
+
+    <!-- <node pkg="rosbag" type="record" name="rosbag" output="screen" args="-o /home/gaetano/Desktop/daniele.bag /db1/DUCKS/traj_theta /db1/DUCKS/traj_x /db1/DUCKS/traj_y">
+    </node> -->
+
+    <!-- <node pkg="centralizzato" type="posture_reg_node" name="posture_reg_node" output="screen" launch-prefix="gnome-terminal --tab --command">
+        <param name="nome_macchina" value="$(arg nome_db)"/>
+    </node> -->
+
+</launch>

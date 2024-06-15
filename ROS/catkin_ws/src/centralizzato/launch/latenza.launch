@@ -1,0 +1,11 @@
+<launch>
+
+    <arg name="nome_db" default="none"/>
+
+    <param name="nome_macchina" value="$(arg nome_db)"/>
+
+    <node pkg="centralizzato" type="latenza_node" name="latenza_node_$(arg nome_db)" output="screen">
+    </node>
+
+
+</launch>

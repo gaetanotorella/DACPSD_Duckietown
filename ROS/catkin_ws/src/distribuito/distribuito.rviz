@@ -1,0 +1,437 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /TF1
+        - /Path1/PoseArray1
+        - /Path1/PoseArray2
+        - /Path1/PoseArray3
+        - /Path1/PoseArray4
+      Splitter Ratio: 0.515350878238678
+    Tree Height: 607
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        db1/back_bumper:
+          Value: false
+        db1/base:
+          Value: true
+        db1/bottom_plate:
+          Value: false
+        db1/camera_frame:
+          Value: false
+        db1/camera_mount:
+          Value: false
+        db1/camera_optical_frame:
+          Value: false
+        db1/camera_support:
+          Value: false
+        db1/caster_wheel:
+          Value: false
+        db1/footprint:
+          Value: false
+        db1/front_bumper:
+          Value: false
+        db1/left_motor:
+          Value: false
+        db1/left_wheel:
+          Value: false
+        db1/left_wheel_axis:
+          Value: false
+        db1/right_motor:
+          Value: false
+        db1/right_wheel:
+          Value: false
+        db1/right_wheel_axis:
+          Value: false
+        db1/top_plate:
+          Value: false
+        db2/back_bumper:
+          Value: false
+        db2/base:
+          Value: true
+        db2/bottom_plate:
+          Value: false
+        db2/camera_frame:
+          Value: false
+        db2/camera_mount:
+          Value: false
+        db2/camera_optical_frame:
+          Value: false
+        db2/camera_support:
+          Value: false
+        db2/caster_wheel:
+          Value: false
+        db2/footprint:
+          Value: false
+        db2/front_bumper:
+          Value: false
+        db2/left_motor:
+          Value: false
+        db2/left_wheel:
+          Value: false
+        db2/left_wheel_axis:
+          Value: false
+        db2/right_motor:
+          Value: false
+        db2/right_wheel:
+          Value: false
+        db2/right_wheel_axis:
+          Value: false
+        db2/top_plate:
+          Value: false
+        duckicha/back_bumper:
+          Value: false
+        duckicha/base:
+          Value: true
+        duckicha/bottom_plate:
+          Value: false
+        duckicha/camera_frame:
+          Value: false
+        duckicha/camera_mount:
+          Value: false
+        duckicha/camera_optical_frame:
+          Value: false
+        duckicha/camera_support:
+          Value: false
+        duckicha/caster_wheel:
+          Value: false
+        duckicha/footprint:
+          Value: false
+        duckicha/front_bumper:
+          Value: false
+        duckicha/left_motor:
+          Value: false
+        duckicha/left_wheel:
+          Value: false
+        duckicha/left_wheel_axis:
+          Value: false
+        duckicha/right_motor:
+          Value: false
+        duckicha/right_wheel:
+          Value: false
+        duckicha/right_wheel_axis:
+          Value: false
+        duckicha/top_plate:
+          Value: false
+        ducklorean/back_bumper:
+          Value: false
+        ducklorean/base:
+          Value: true
+        ducklorean/bottom_plate:
+          Value: false
+        ducklorean/camera_frame:
+          Value: false
+        ducklorean/camera_mount:
+          Value: false
+        ducklorean/camera_optical_frame:
+          Value: false
+        ducklorean/camera_support:
+          Value: false
+        ducklorean/caster_wheel:
+          Value: false
+        ducklorean/footprint:
+          Value: false
+        ducklorean/front_bumper:
+          Value: false
+        ducklorean/left_motor:
+          Value: false
+        ducklorean/left_wheel:
+          Value: false
+        ducklorean/left_wheel_axis:
+          Value: false
+        ducklorean/right_motor:
+          Value: false
+        ducklorean/right_wheel:
+          Value: false
+        ducklorean/right_wheel_axis:
+          Value: false
+        ducklorean/top_plate:
+          Value: false
+        map:
+          Value: true
+      Marker Alpha: 1
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          db1/footprint:
+            db1/base:
+              db1/bottom_plate:
+                db1/back_bumper:
+                  {}
+                db1/caster_wheel:
+                  {}
+                db1/front_bumper:
+                  {}
+                db1/top_plate:
+                  db1/camera_mount:
+                    db1/camera_support:
+                      db1/camera_frame:
+                        db1/camera_optical_frame:
+                          {}
+              db1/left_motor:
+                db1/left_wheel_axis:
+                  db1/left_wheel:
+                    {}
+              db1/right_motor:
+                db1/right_wheel_axis:
+                  db1/right_wheel:
+                    {}
+          db2/footprint:
+            db2/base:
+              db2/bottom_plate:
+                db2/back_bumper:
+                  {}
+                db2/caster_wheel:
+                  {}
+                db2/front_bumper:
+                  {}
+                db2/top_plate:
+                  db2/camera_mount:
+                    db2/camera_support:
+                      db2/camera_frame:
+                        db2/camera_optical_frame:
+                          {}
+              db2/left_motor:
+                db2/left_wheel_axis:
+                  db2/left_wheel:
+                    {}
+              db2/right_motor:
+                db2/right_wheel_axis:
+                  db2/right_wheel:
+                    {}
+          duckicha/footprint:
+            duckicha/base:
+              duckicha/bottom_plate:
+                duckicha/back_bumper:
+                  {}
+                duckicha/caster_wheel:
+                  {}
+                duckicha/front_bumper:
+                  {}
+                duckicha/top_plate:
+                  duckicha/camera_mount:
+                    duckicha/camera_support:
+                      duckicha/camera_frame:
+                        duckicha/camera_optical_frame:
+                          {}
+              duckicha/left_motor:
+                duckicha/left_wheel_axis:
+                  duckicha/left_wheel:
+                    {}
+              duckicha/right_motor:
+                duckicha/right_wheel_axis:
+                  duckicha/right_wheel:
+                    {}
+          ducklorean/footprint:
+            ducklorean/base:
+              ducklorean/bottom_plate:
+                ducklorean/back_bumper:
+                  {}
+                ducklorean/caster_wheel:
+                  {}
+                ducklorean/front_bumper:
+                  {}
+                ducklorean/top_plate:
+                  ducklorean/camera_mount:
+                    ducklorean/camera_support:
+                      ducklorean/camera_frame:
+                        ducklorean/camera_optical_frame:
+                          {}
+              ducklorean/left_motor:
+                ducklorean/left_wheel_axis:
+                  ducklorean/left_wheel:
+                    {}
+              ducklorean/right_motor:
+                ducklorean/right_wheel_axis:
+                  ducklorean/right_wheel:
+                    {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Arrow Length: 0.10000000149011612
+          Axes Length: 0.30000001192092896
+          Axes Radius: 0.009999999776482582
+          Class: rviz/PoseArray
+          Color: 113; 159; 207
+          Enabled: true
+          Head Length: 0.07000000029802322
+          Head Radius: 0.029999999329447746
+          Name: PoseArray
+          Queue Size: 1
+          Shaft Length: 0.23000000417232513
+          Shaft Radius: 0.009999999776482582
+          Shape: Arrow (Flat)
+          Topic: /DUCKS/db1/path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Arrow Length: 0.10000000149011612
+          Axes Length: 0.30000001192092896
+          Axes Radius: 0.009999999776482582
+          Class: rviz/PoseArray
+          Color: 255; 255; 255
+          Enabled: true
+          Head Length: 0.07000000029802322
+          Head Radius: 0.029999999329447746
+          Name: PoseArray
+          Queue Size: 1
+          Shaft Length: 0.23000000417232513
+          Shaft Radius: 0.009999999776482582
+          Shape: Arrow (Flat)
+          Topic: /DUCKS/db2/path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Arrow Length: 0.10000000149011612
+          Axes Length: 0.30000001192092896
+          Axes Radius: 0.009999999776482582
+          Class: rviz/PoseArray
+          Color: 255; 25; 0
+          Enabled: true
+          Head Length: 0.07000000029802322
+          Head Radius: 0.029999999329447746
+          Name: PoseArray
+          Queue Size: 10
+          Shaft Length: 0.23000000417232513
+          Shaft Radius: 0.009999999776482582
+          Shape: Arrow (Flat)
+          Topic: /DUCKS/duckicha/path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Arrow Length: 0.10000000149011612
+          Axes Length: 0.30000001192092896
+          Axes Radius: 0.009999999776482582
+          Class: rviz/PoseArray
+          Color: 252; 233; 79
+          Enabled: true
+          Head Length: 0.07000000029802322
+          Head Radius: 0.029999999329447746
+          Name: PoseArray
+          Queue Size: 1
+          Shaft Length: 0.23000000417232513
+          Shaft Radius: 0.009999999776482582
+          Shape: Arrow (Flat)
+          Topic: /DUCKS/ducklorean/path
+          Unreliable: false
+          Value: true
+      Enabled: true
+      Name: Path
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Angle: 0
+      Class: rviz/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Scale: 299.5992431640625
+      Target Frame: <Fixed Frame>
+      X: 0
+      Y: 0
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: true
+  Height: 836
+  Hide Left Dock: true
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd0000000400000000000001ca000002eafc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073000000003d000002ea000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f000002e5fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000002e5000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000003ee0000003efc0100000002fb0000000800540069006d00650000000000000003ee000003bc00fffffffb0000000800540069006d0065010000000000000450000000000000000000000558000002ea00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1368
+  X: 72
+  Y: 27
